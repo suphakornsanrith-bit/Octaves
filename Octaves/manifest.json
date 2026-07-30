@@ -1,0 +1,18 @@
+{
+"name":"Octaves",
+"short_name":"Octaves",
+
+"display":"standalone",
+
+"orientation":"portrait",
+
+"theme_color":"#0F52BA"
+}
+  "icons": [
+    {
+      "src": "icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

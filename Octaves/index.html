@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+<link rel="manifest" href="manifest.json">
+
+<meta name="theme-color" content="#0F52BA">
+<meta charset="UTF-8">
+
+<title>
+Octaves - Music Platform
+</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<header>
+
+<h1 class="logo">
+🎧 OCTAVES
+</h1>
+
+
+<nav>
+
+<button onclick="openSettings()">
+⚙ Settings
+</button>
+
+</nav>
+
+
+</header>
+
+
+
+
+
+<section class="hero">
+
+
+<h2>
+Music Beyond Sound.
+</h2>
+
+
+<p>
+The creator ecosystem by KSOVOSQ.
+</p>
+
+
+<button onclick="playDemo()">
+▶ Play Demo
+</button>
+
+
+</section>
+
+
+
+
+
+
+
+
+<section class="library">
+
+
+<h2>
+Your Music Library
+</h2>
+
+
+
+<div id="songs"
+class="cards">
+
+
+<div class="card">
+
+🎵
+
+<h3>
+Ocean Dreams
+</h3>
+
+<p>
+KSOVOSQ Studio
+</p>
+
+
+<button onclick="playSong('Ocean Dreams')">
+Play
+</button>
+
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<section class="creator">
+
+
+<h2>
+Creator Studio
+</h2>
+
+
+<input
+type="file"
+id="upload"
+accept="audio/*">
+
+
+<button onclick="uploadSong()">
+Upload Music
+</button>
+
+
+<div id="uploadResult">
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- SETTINGS -->
+
+
+<div id="settings"
+class="panel">
+
+
+<h2>
+Settings
+</h2>
+
+
+<p>
+Theme
+</p>
+
+
+<button onclick="darkMode()">
+🌙 Dark Mode
+</button>
+
+
+<button onclick="lightMode()">
+☀ Light Mode
+</button>
+
+
+<button onclick="closeSettings()">
+Close
+</button>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div id="player" class="player">
+
+🎵
+
+<span id="now">
+Nothing Playing
+</span>
+
+<br>
+
+<audio id="audioPlayer" controls>
+
+</audio>
+
+
+</div>
+
+
+
+
+
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>
+<button id="installBtn" hidden>
+📱 Install Octaves
+</button>
